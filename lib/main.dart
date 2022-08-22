@@ -74,10 +74,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: [
                     GestureDetector(
-                        onTap: () {
-                          setState(() => isExpanded = !isExpanded);
-                        },
-                        child: const ListTile(title: Text('1'))),
+                      onTap: () {
+                        setState(() => isExpanded = !isExpanded);
+                      },
+                      child: const ListTile(
+                        title: Text('Click me to switch status'),
+                      ),
+                    ),
                     const ListTile(title: Text('2')),
                     ExpandSection(
                         isExpanded: isExpanded,
